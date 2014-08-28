@@ -1,0 +1,2 @@
+/* Notruf rechtsbündig */
+a[href*="clanmenu.php?action=sos"] {display: block; font-weight: bold; text-align: right; } /* Nicht optimal gelöst */

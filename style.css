@@ -1,0 +1,175 @@
+/*
+ * BetterSunfire
+ * -------------
+ *
+ * (c) ????-2014    FWTools    (http://fwtools.de)
+ * (c) ????-????    Doran      (http://www.fwwiki.de/index.php/Benutzer:Doran)
+ * (c) 2004		    Sotrax     (http://freewar.de)
+ *
+ * Hilfe gibt es im Styleforum: http://forum.freewar.de/viewtopic.php?f=18&t=40823
+ *
+ * Besteht aus:
+ *  - Stylesheet Cold Sunfire v1.0
+ *  - einigen Features aus dem K-Style von Isdrador (http://kstyle.infos.lc)
+ *  - Runenpuzzle-Änderungen von Po1son
+ *  - diversen Änderungen von Latzhosenträger
+ *  - diversen Änderungen von FWTools
+ *
+ * Dank geht an alle, die Inhalte zur Verfügung gestellt haben, insbesondere Sotrax und Isdrador.
+ * Auch bedanken wir uns bei allen, die tatkräftig geholfen haben.
+ *
+ * Einige Inhalte dieses Styles werden mittlerweise von vielen anderen Styles übernommen.
+ * Wenn jemand etwas übernehemen will, muss er einen PN an Latzhosenträger schreiben.
+ */
+
+p, ul, ol, div, td, span, layer, table, body {
+	font-family: Arial, helvetica, sans-serif;
+	font-size: 12px;
+	color: #222222;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border: 0;
+}
+
+h1 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.medium { font-size: 11px; }
+.small { font-size: 10px; }
+
+.fontcolor { color: #555; }
+.white { color: #fff; }
+
+
+.healthmed { color: #FF8000; }
+.healthok { color: #309000; }
+.healthcritical { color: #D20000; }
+
+.bannerad { border: 1px solid #c85424; }
+
+.framechatformbg { background-color: #e7e7e7; }
+.framechattextbg { background-color: #f8f8f8; margin: 5px 5px 10px 5px; }
+.framemainbg { margin: 10px; background: url(i/mainbg.jpg) repeat-y right; }
+.frameitembg { margin: 10px; background-color: #dcdcdc; background-image: url(i/itembg.jpg); }
+.framemapbg { margin: 10px; margin-top: 3px; background-color: #c1bdba; background-image: url(i/itembg.jpg); }
+.framemenubg { background-color: #c1bdba; background-image: url(i/itembg.jpg); }
+
+.borderbg { background-color: #d0cfcf; }
+
+img.nocango { background: transparent; }
+a.nocango { background: transparent; height: 50px; width: 50px; border-width: 0; display: block; }
+a.nocango:hover { background: url(i/nocango.gif) top left no-repeat; cursor: default; }
+
+.abilitymenu { border: 0; border-collapse: collapse; }
+.abilitymenu tr { padding: 2px; padding-left: 5px; background-color: #ece9e6; }
+.abilitymenu td { text-align: right; padding: 2px; padding-left: 5px; border: 1px solid #d6cbc2; }
+
+td.c1 { text-align: left; }
+.bold td { font-weight: bold; }
+
+.friendlist { border-collapse: collapse; }
+.friendlist tr { background-color: #ece9e6; }
+.friendlist td { padding: 3px; border-bottom: 1px solid #d6cbc2; }
+
+
+/* Einstellungen */
+a[href*="profil.php?action=skip"]:before 	{ content: url(images/check.png); padding-right: 2px; }
+a[href*="profil.php?action=skip"]:hover 	{ color: #D20000 !important; }
+a[href*="profil.php?action=show"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+a[href*="profil.php?action=show"]:hover 	{ color: #008800 !important; }
+a[href*="profil.php?action=enable"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+a[href*="profil.php?action=enable"]:hover 	{ color: #008800 !important; }
+form > input[name="ownstyle"] 			{ width: 100%; }
+
+/* Item- / Geldübergabe */
+.frameitembg a[href*="item.php?action=transfer2"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+.frameitembg a[href*="item.php?action=moneytransfer3"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+
+/* Zustände blinken beim Auslaufen */
+span[title*="(2 Minuten)"] { color:#D20000; text-decoration:blink;}
+span[title*="(1 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
+span[title*="(0 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
+
+/* Rassen der Clanmitglieder im Clanmenu */
+/* TODO: Remove slow universal selector */
+.frameitembg *[title*="Mensch"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg *[title*="Onlo"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg *[title*="Natla"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg *[title*="dunkler"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg *[title*="Serum"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg *[title*="Taruner"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+
+/* Spezialworldsays ausblenden */
+/* Gelb, Pink, Orange */
+p.worldsay table tr[bgcolor="#FFDA47"], p.worldsay table tr[bgcolor="#FFAEA1"], p.worldsay table tr[bgcolor="#F8A370"] { display:none; }
+p.worldsay table tr[bgcolor="#FFDA47"] td, p.worldsay table tr[bgcolor="#FFAEA1"] td, p.worldsay table tr[bgcolor="#F8A370"] td { display:none; }
+
+/* Inventar-Platzschaffende Änderungen */
+p.listcaption + p.listrow .small b + b 		{ margin: 0 0 0 -6px; }
+p.listcaption + p.listrow .small b + b:before 	{ content: " | "; background: #ECE9E6; }
+
+p.listcaption + p + p + p + p + p + p + p.listrow .valueincreased,
+p.listcaption + p + p + p + p + p + p + p + p.listrow .valueincreased,
+p.listcaption + p + p + p + p + p + p + p + p + p.listrow .valueincreased {
+	display: inline-block;
+	width: 150px;
+}
+
+p.listcaption + p + p + p + p + p + p + p.listrow,
+p.listcaption + p + p + p + p + p + p + p + p.listrow,
+p.listcaption + p + p + p + p + p + p + p + p + p.listrow {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* Modified by Cembon */
+p[title~="Zustand:"] a { font-size: 0; }
+p[title~="Zustand:"] a:before { content: "Waffe"; font-size: 12px; }
+
+.valueincreased { color: #309000; font-size: smaller; }
+#phasespacer { display: none; }
+
+#fastspell1, #fastspell2, #fastspell3, #fastspell4, #fastspell5, #fastspell6, #fastspell7, #fastspell8, #fastspell9 { margin-top: -1px; }
+#fastspell { margin: -10px 5px 0px 0px; }
+#fastspell td { padding: 0px 5px 0px 0px; }
+
+.frameitembg { margin: 10px; margin-top: 1px; background: #dcdcdc url(i/itembg.jpg); }
+.frameitembg img[src$="item_divider.gif"] { margin-top: -5px; height: 9px; }
+
+/* Bilder verkleinern ( Vote / Brief / Sieg / Niederlage ) */
+img[src$="brief.jpg"] { width: 100px; }
+img[src$="sieg.jpg"] { width: 50px; }
+img[src$="niederlage.jpg"] { width: 50px; }
+
+img[src="http://voting.gdynamite.de/images/gd_animbutton.gif"],
+img[src="http://www.gamessphere.de/img/graphics/vote.gif"],
+img[src="http://www.freewar.de/images/vote.gif"] { width: 25px !important; }
+
+/* Cursor Fix */
+/* TODO: Really needed? */
+*[onclick] { cursor: pointer; }
+
+/* Texteingabe größer: Modnachricht, Feuervogel, Post, Postvogel, Notizzettel... */
+.frameitembg textarea { width: 100%; height: 50%; }
+.framemainbg textarea { width: 100% !important; height: 70% !important; }
+
+/* Sponsorsterne */
+img[src$="sponsor.gif"], img[src$="sponsor2.gif"], img[src$="sponsor3.gif"] { margin-right: 1px; }
+
+/* Inventar-Fix */
+.frameitembg { overflow-x: hidden; }

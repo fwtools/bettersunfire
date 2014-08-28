@@ -1,0 +1,4 @@
+#listrow_int ~ p.listrow[title$="%"]:before {     background-color: #ECEAEA;
+    left: 0px;
+    position: absolute;
+ }
