@@ -13,9 +13,9 @@
 
 .chattext, .submitsagen { color: #000000; }
 .chattextclan, .submitclan { color: #d20000; }
-.chattextscream, .submitschreien { color: #004da7; width: 87px; }
+.chattextscream, .submitschreien { color: #004da7; }
 .chattextgroup, .submitgroup { color: #e36b30; }
-.chattextwhisper, .submitwhisper { color: #006600; width: 88px; }
+.chattextwhisper, .submitwhisper { color: #006600; }
 .chattextglobal, .submitglobalchat { color: #6e621e; }
 
 .submitschreien { width: 87px; }
