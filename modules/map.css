@@ -12,3 +12,4 @@ p.positiontext {
 }
 
 .framemapbg td { position: relative; }
+.framemapbg a { z-index: 2; position: relative; }
