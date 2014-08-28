@@ -10,3 +10,5 @@ p.positiontext {
 	padding-right: 0px;
 	width: 100%;
 }
+
+.framemapbg td { position: relative; }
