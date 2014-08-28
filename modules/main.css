@@ -67,6 +67,6 @@ p.personlistcaption, p.itemlistcaption, #plantrow {
 	padding-left: 5px;
 }
 
-p.personlistcaption { background-image: url(images/buttonblue_bg.jpg); }
-p.itemlistcaption { background-image: url(images/buttonorange_bg.jpg); }
-#plantrow { background-image: url(images/buttongreen_bg.jpg); }
+p.personlistcaption { background-image: url(i/buttonblue_bg.jpg); }
+p.itemlistcaption { background-image: url(i/buttonorange_bg.jpg); }
+#plantrow { background-image: url(i/buttongreen_bg.jpg); }

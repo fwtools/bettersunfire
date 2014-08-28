@@ -88,11 +88,11 @@ td.c1 { text-align: left; }
 
 
 /* Einstellungen */
-a[href*="profil.php?action=skip"]:before 	{ content: url(images/check.png); padding-right: 2px; }
+a[href*="profil.php?action=skip"]:before 	{ content: url(i/check.png); padding-right: 2px; }
 a[href*="profil.php?action=skip"]:hover 	{ color: #D20000 !important; }
-a[href*="profil.php?action=show"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+a[href*="profil.php?action=show"]:before 	{ content: url(i/cross.png); padding-right: 2px; }
 a[href*="profil.php?action=show"]:hover 	{ color: #008800 !important; }
-a[href*="profil.php?action=enable"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+a[href*="profil.php?action=enable"]:before 	{ content: url(i/cross.png); padding-right: 2px; }
 a[href*="profil.php?action=enable"]:hover 	{ color: #008800 !important; }
 form > input[name="ownstyle"] 			{ width: 100%; }
 
