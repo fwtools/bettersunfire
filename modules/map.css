@@ -11,4 +11,4 @@ p.positiontext {
 	width: 100%;
 }
 
-.framemapbg td:before { position: relative; }
+.framemapbg td:after { position: relative; }
