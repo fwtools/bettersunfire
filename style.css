@@ -106,13 +106,12 @@ span[title*="(1 Minuten)"] { color:#D20000; text-decoration:blink; font-size: la
 span[title*="(0 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
 
 /* Rassen der Clanmitglieder im Clanmenu */
-/* TODO: Remove slow universal selector */
-.frameitembg *[title*="Mensch"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
-.frameitembg *[title*="Onlo"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
-.frameitembg *[title*="Natla"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
-.frameitembg *[title*="dunkler"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
-.frameitembg *[title*="Serum"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
-.frameitembg *[title*="Taruner"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg .listrow[title*="Mensch"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg .listrow[title*="Onlo"]:after 		{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg .listrow[title*="Natla"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg .listrow[title*="dunkler"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg .listrow[title*="Serum"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+.frameitembg .listrow[title*="Taruner"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
 
 /* Spezialworldsays ausblenden */
 /* Gelb, Pink, Orange */
@@ -162,7 +161,7 @@ img[src="http://www.freewar.de/images/vote.gif"] { width: 25px !important; }
 
 /* Cursor Fix */
 /* TODO: Really needed? */
-*[onclick] { cursor: pointer; }
+[onclick] { cursor: pointer; }
 
 /* Texteingabe größer: Modnachricht, Feuervogel, Post, Postvogel, Notizzettel... */
 .frameitembg textarea { width: 100%; height: 50%; }
