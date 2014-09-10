@@ -1,8 +1,0 @@
-/* Runenpuzzle mit Zahlen statt Bildern */
-
-	img[src$="minigame/a1.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/1.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
-	img[src$="minigame/a2.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/2.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
-	img[src$="minigame/a3.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/3.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
-	img[src$="minigame/a4.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/4.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
-	img[src$="minigame/a5.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/5.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
-	img[src$="minigame/a6.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/6.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
