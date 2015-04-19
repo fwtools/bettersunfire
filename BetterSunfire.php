@@ -21,9 +21,13 @@ class BetterSunfire {
 
 		// FIXME: Gets cached and doesn't change according to URL
 		if($request->hasQueryParameter('xxx')) {
-			$css.= '.framebannerbg { background-color: #C85424; background-image: url(i/bannerbg.jpg); border-bottom: 1px solid #000000; }';
+			$css .= '.framebannerbg { background-color: #C85424; background-image: url(i/bannerbg.jpg); border-bottom: 1px solid #000000; }';
 		} else {
-			$css.= '.framebannerbg { background-color: #C85424; background-image: url(images/bannerbg2.jpg); border-bottom: 1px solid #000000; }';
+			$css .= '.framebannerbg { background-color: #C85424; background-image: url(images/bannerbg2.jpg); border-bottom: 1px solid #000000; }';
+		}
+
+		if ($request->hasQueryParameter('csd')) {
+			$css .= file_get_contents(__DIR__."/cmp/csd.css");
 		}
 
 		$body = $response->getBody();
