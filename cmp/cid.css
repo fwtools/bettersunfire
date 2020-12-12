@@ -1,4 +1,4 @@
-/* Inventarveränderungen (CID)*/
+/* InventarverÃ¤nderungen (CID)*/
 
 	p.listitemrow 							{ position: relative; padding: 2px 4px 3px 4px; font-size: 1px; color: transparent; border: 1px solid #BABABA; }
 	p.listitemrow:hover 						{ padding: 2px 65px 3px 4px; }
@@ -21,5 +21,7 @@
 	p.listitemrow span.medium 					{ font-size: 1px; color: transparent; }
 	p.listitemrow span.medium a 					{ font-size: 1px; color: #FF0000; display: block; height: 0px; margin: -2px 0px 0px 300px; }
 	#filterrow 							{ padding: 2px; }
+	#filterrow a 							{ font-size: 10px; }
+  	#filterrow > a:nth-child(n+4) 					{ padding-left: 5px; }
 	#filterrow b 							{ font-size: 10px; }
 	#filterrow:before 						{ color: #5E5E5E; }
