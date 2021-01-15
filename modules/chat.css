@@ -18,6 +18,8 @@
 .chattextwhisper, .submitwhisper { color: #006600; }
 .chattextglobal, .submitglobalchat { color: #6e621e; }
 
+.chattextsynergieinspiration { font-style: italic; }
+
 .submitschreien { width: 87px; }
 .submitwhisper { width: 88px; }
 
